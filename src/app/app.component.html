@@ -1,4 +1,7 @@
-<app-slideshow></app-slideshow> 
-<app-menu></app-menu>
+<app-menu [darkMode]="router.url !== '/'"></app-menu> 
+<div class="container" [class.container]="router.url !=='/'">
+    <!-- Container Klasse wird nur angewandt, wenn die URL nicht die Start URL ist -->
+<router-outlet></router-outlet>
+</div>
 <!-- This is an own HTML Tag, simply included
 app should alway be used in name -->

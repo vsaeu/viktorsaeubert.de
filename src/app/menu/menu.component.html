@@ -1,11 +1,14 @@
-<header>
-    <img src="assets/img/logo.png" alt="">
+<header [class.headerDark]="darkMode"> 
+    <!-- class mit dem Namen ".headerDark" wird hinzugefügt, wenn ="darkMode" = true -->
 
-    <div>
-        <a href="#">Home</a>
-        <a href="#">Curriculum</a>
-        <a href="#">Projekte</a>
-        <a href="#">Impressum</a>
+    <img *ngIf="!darkMode" routerLink="/" src="assets/img/logoWhite.png" alt="">
+    <img *ngIf="darkMode" routerLink="/" src="assets/img/logoBlack.png" alt="">
+
+    <div [class.darkLinks]="darkMode">
+        <a routerLink="/">Home</a>
+        <a routerLink="/data-protection">Data protection</a>
+        <a href="#">Projects</a>
+        <a routerLink="/imprint">Imprint</a>
     </div>
 
 </header>
