@@ -11,9 +11,9 @@ export class SlideshowComponent implements OnInit {
   // implement OnInit means: this script is performing at onload
   constructor() { }
 
-  images = ['desk.jpg', 'forest.jpg', 'office.jpg'];
+  images = ['watchBGLayer.png', 'officeBGLayer.png', 'monitorsBGLayer.png'];
   headlines = [
-    'Bring engineering to the next level',
+    'Hi, I am Viktor,',
     'Passionate web developement',
     'Most happy users'];
   currentImage = 0;

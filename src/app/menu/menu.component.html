@@ -1,14 +1,23 @@
 <header [class.headerDark]="darkMode"> 
     <!-- class mit dem Namen ".headerDark" wird hinzugefügt, wenn ="darkMode" = true -->
 
-    <img *ngIf="!darkMode" routerLink="/" src="assets/img/logoWhite.png" alt="">
-    <img *ngIf="darkMode" routerLink="/" src="assets/img/logoBlack.png" alt="">
+    <!-- <img *ngIf="!darkMode" routerLink="/" src="assets/img/logoWhite.png" alt="">
+    <img *ngIf="darkMode" routerLink="/" src="assets/img/logoBlack.png" alt=""> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <span [class.darkVS]="darkMode" routerLink="/"><>VS</span>
 
     <div [class.darkLinks]="darkMode">
-        <a routerLink="/">Home</a>
-        <a routerLink="/data-protection">Data protection</a>
-        <a href="#">Projects</a>
-        <a routerLink="/imprint">Imprint</a>
+        <a routerLink="/">HOME</a>
+        <a routerLink="/" href="#">SKILLS</a>
+        <a routerLink="/" href="#">ABOUT</a>
+        <a routerLink="/" href="#">PROJECTS</a>
+        <a routerLink="/" href="#">CONTACT</a>
+
+        <!-- <a routerLink="/data-protection">Data protection</a> -->
+        <!-- <a href="#">Projects</a> -->
+        <!-- <a routerLink="/imprint">Imprint</a> -->
     </div>
 
 </header>
