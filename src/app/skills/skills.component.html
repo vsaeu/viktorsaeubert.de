@@ -1,2 +1,20 @@
 <p>My skills</p>
 <div> <img src="./assets/img/angular.svg" alt=""></div>
+<!-- <p *ngFor="let skill of skills; let i = index;" >{{skills[i]['name']}}</p> -->
+
+
+<img 
+*ngFor="let skill of skills; let i = index;" src="./assets/img/{{skills[i]['path']}}" 
+>
+
+
+<!-- *ngFor="let skill of skills; let i = index;" src="./assets/img/'{{skills[i]['path']}}'"  -->
+
+
+<!-- [ngStyle]="{
+    'transform': 'rotate(' + i* 6.923077 +'deg)',
+   
+    'display' : game.exStack[i]['dNone'] ? 'none' : '' 
+    
+
+}" -->
