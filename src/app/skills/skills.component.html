@@ -1,12 +1,15 @@
-<p>My skills</p>
-<div> <img src="./assets/img/angular.svg" alt=""></div>
+<h1><span>My skills</span></h1>
+<!-- <div> <img src="./assets/img/angular.svg" alt=""></div> -->
 <!-- <p *ngFor="let skill of skills; let i = index;" >{{skills[i]['name']}}</p> -->
 
-
-<img 
-*ngFor="let skill of skills; let i = index;" src="./assets/img/{{skills[i]['path']}}" 
->
-
+<div class="skillsWrapper">
+<div *ngFor="let skill of skills; let i = index;" class="skills">
+    <div >
+    <img src="./assets/img/skillsIcons/{{skills[i]['path']}}">
+</div>
+    <span>{{skills[i]['name']}}</span>
+</div>
+</div>
 
 <!-- *ngFor="let skill of skills; let i = index;" src="./assets/img/'{{skills[i]['path']}}'"  -->
 

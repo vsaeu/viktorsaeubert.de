@@ -13,14 +13,40 @@ export class SkillsComponent implements OnInit {
     [
       {
         name: 'Javascript',
-        path: "angular.svg"
+        path: "js_logo.svg"
       },
-
-
       {
         name: 'Angular',
         path: "angular.svg"
-      }
+      },
+      {
+        name: 'HTML / CSS',
+        path: "HTML5.png"
+      },
+      {
+        name: 'Rest API',
+        path: "API.png"
+      },
+      {
+        name: 'SCRUM',
+        path: "Scrum.png"
+      },
+      {
+        name: 'Git',
+        path: "Git.png"
+      },
+      {
+        name: 'Design Thinking',
+        path: "DesignThinking.png"
+      },
+      {
+        name: 'Test automation',
+        path: "testAutomation.png"
+      },
+      {
+        name: 'Databases',
+        path: "database.png"
+      },
 
     ]
   //  "HTML / CSS":"CSS3.png",
