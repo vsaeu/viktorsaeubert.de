@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import * as AOS from 'aos';
+
 
 @Component({
   selector: 'app-root',
@@ -17,6 +19,7 @@ constructor(public router: Router) {}
 ngOnInit(){
   this.currentRoute = this.router.url;
 console.log(this.router.url);
+AOS.init();
 }
 
 }

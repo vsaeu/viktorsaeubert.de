@@ -1,0 +1,34 @@
+span{
+    color: white;
+}
+
+.journeyStationsWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.journeyStationsClass{
+    // background-color: antiquewhite;
+    color: white;
+    margin: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(25vw - 3rem);
+    display: flex;
+    flex-direction: column;
+
+    img{
+        height: 1.5rem;
+        width: 1.5rem;
+        padding: .8rem;
+        background-color: #2cfcd8;
+        border-radius: 100%;
+    }
+
+}

@@ -1,1 +1,31 @@
-<p>about works!</p>
+<h1><span>ABOUT ME</span></h1>
+
+
+
+
+<span>"I love solving problems creatively and pragmatically, especially as a front-end developer. I'm also a family man
+     and a versatile interested person." </span>
+
+<!-- <span>"Ich liebe es, Probleme kreativ und pragmatisch zu lösen, insbesondere als Front-End-Entwickler. Außerdem bin ich Familienmensch und eine vielseitig
+     interessierte Person." </span> -->
+
+<!-- <h2>MY JOURNEY BEGAN</h2>
+<span>as a mechanical engineer, working for several big companys. As a TIC engineer (Testing, Insepection and Certification), I had to handle a lot with customers and documentation.   </span>
+
+<h2>I REALIZED</h2>
+<span>the potential of software by implenting some small but very efficient Micorosoft Office automations in our daily business. That saved us tons of working hours.</span>
+
+<h2>WHEN FOUNDING</h2>
+<span>Developer Akademie from Munich, a young and dynamic startup, I could visualize my path to a career in frontend development. Their systamatic training with experienced mentors, maxed out my level of skills in the last couple of months  </span>
+
+<h2>MY NEW JOURNEY BEGINS</h2>
+<span>as a frontend developer who is able to visualize goals and find the direct way to solutions. I enjoy working in teams and likewise my previous colleagues were happy to work with me. </span> -->
+
+<div class="journeyStationsWrapper">
+<div *ngFor="let journeyStation of journeyStations" class="journeyStationsClass">
+     <img src="./assets/img/{{journeyStation['imgUrl']}}">
+     <h4>{{journeyStation.title}}</h4>
+     <span>{{journeyStation.description}}</span>
+</div>
+
+</div>

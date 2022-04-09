@@ -1,1 +1,38 @@
-<p>projects works!</p>
+<h1><span>MY PROJECTS</span></h1>
+
+<div class="projectFilter">
+    <span (click)="filter('ALL')" [class.activeProjectFilterClass]="activeProjectFilter === 'ALL'">
+        ALL</span>
+    <span [class.activeProjectFilterClass]="activeProjectFilter === 'ANGULAR'"
+        (click)="filter('ANGULAR')">ANGULAR</span>
+    <span [class.activeProjectFilterClass]="activeProjectFilter === 'JAVASCRIPT'"
+        (click)="filter('JAVASCRIPT')">JAVASCRIPT</span>
+</div>
+
+
+<div class="projectsWrapper">
+    <div class="projects">
+        <img src="./assets/img/projects/laptopPokedex.jpg">
+        <div  class="projectDescription">
+            <h3>#Pokedex</h3> <br>
+            <h5>A Pokemo Gallery through pokeapi.co</h5>
+
+            <dl>
+                <dt>Technologies:</dt>
+                <dd>Javascript, Rest API, HTML/CSS</dd>
+            </dl>
+
+            <div class="projectsFooter">
+                <span>Check it out</span>
+                <img class="imGit" src="./assets/img/github-fill.png" alt="">
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="projects">
+        <img src="./assets/img/projects/laptopROF.jpg">
+    </div>
+
+</div>
