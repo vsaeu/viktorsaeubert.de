@@ -3,7 +3,8 @@
 ########### CONFIG ###############
 
 $recipient = $_POST['recipent'];
-$redirect = 'success.html';
+// $redirect = '';
+$redirect = 'index.html';
 // $recipient = 'vsaeubert@gmail.com'; Ursprünglich
 
 ########### CONFIG END ###########
@@ -41,9 +42,11 @@ switch ($_SERVER['REQUEST_METHOD']) {
         header("Access-Control-Allow-Origin: *");
 
         $subject = "Contact From " . $_POST['name'];
-        $headers = "From:  noreply@developerakademie.com";
-
+        $headers = "From:  noreply-viktorsaeubert@viktorsaeubert.com";
+       
         mail($recipient, $subject, $_POST['message'], $headers);
+        mail("laura.saeubert@web.de", $subject, $_POST['message'], $headers);
+
         header("Location: " . $redirect); 
 
         break;

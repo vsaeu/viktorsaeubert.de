@@ -1,6 +1,9 @@
 <div class="slideshowContainer">
   <img src="assets/img/{{images[currentImage]}}" *ngIf="showImage" class="imgSlideshow">
   <!-- Variables from typescript can be used, Syntax: {{var}} -->
+
+
+
 </div>
 
 <div class="slideshowContainer slideshowOverlay">
@@ -9,15 +12,19 @@
     <span>Hi, I'm Viktor</span> <br>
     <span>I'm a frontend developer</span>
   </p>
+
+
+
+
 </div>
 
 <div class="home-content flex">
   <div class="headings">
     <h1 class="mainheading">
-      <div class="falling-letter-container" [class.flip-text1]="flipText" >
+      <div class="falling-letter-container" [class.flip-text1]="flipText">
         <span class="falling-letter" *ngFor="let letter of heading_1; let i = index" #letter>{{
           letter
-        }}</span>
+          }}</span>
       </div>
       <div class="mainheading2" [class.flip-text2]="flipText">
         <span>Hi, I am </span><span class="text-colored">Viktor</span>
@@ -25,8 +32,16 @@
     </h1>
 
     <h2 class="subheading">
-      <span class="falling-letter" *ngFor="let letter of heading_2; let i = index" [class.fade-out]="flipText && i == 18" #letter2>{{
-        letter 
-      }}</span>
+      <span class="falling-letter" *ngFor="let letter of heading_2; let i = index"
+        [class.fade-out]="flipText && i == 18" #letter2>{{
+        letter
+        }}</span>
     </h2>
+
+
   </div>
+
+  <div>
+
+
+</div>
