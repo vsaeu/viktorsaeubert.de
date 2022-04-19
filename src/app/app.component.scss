@@ -2,5 +2,14 @@
     padding-left: 120px;
     padding-right: 120px;
     padding-top: 120px;
+    background-color: white !important;
+    scroll-behavior: smooth;
 
+}
+
+:root {
+    --c-grey: #1a1a1a;
+    --c-primary: #fa2759;
+    --c-secodary: #2dfcd8;
+    --c-black: #000;
 }

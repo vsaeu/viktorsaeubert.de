@@ -1,4 +1,4 @@
-<header [class.headerDark]="darkMode"> 
+<header [class.headerDark]="darkMode" id="Home"> 
     <!-- class mit dem Namen ".headerDark" wird hinzugefügt, wenn ="darkMode" = true -->
 
     <!-- <img *ngIf="!darkMode" routerLink="/" src="assets/img/logoWhite.png" alt="">
@@ -9,11 +9,11 @@
     <span [class.darkVS]="darkMode" routerLink="/"><>VS</span>
 
     <div [class.darkLinks]="darkMode">
-        <a routerLink="/">HOME</a>
-        <a routerLink="/" href="#">SKILLS</a>
-        <a routerLink="/" href="#">ABOUT</a>
-        <a routerLink="/" href="#">PROJECTS</a>
-        <a routerLink="/" href="#">CONTACT</a>
+        <a (click)="toHome()" routerLink="/">HOME</a>
+        <a (click)="toSkills()"  >SKILLS</a>
+        <a (click)="toProjects()"  >PROJECTS</a>
+        <a (click)="toAbout()" >ABOUT</a>
+        <a (click)="toContacts()" >CONTACT</a>
 
         <!-- <a routerLink="/data-protection">Data protection</a> -->
         <!-- <a href="#">Projects</a> -->

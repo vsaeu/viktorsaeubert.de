@@ -1,3 +1,133 @@
-p{
+h1 {
+    text-align: center;
+    padding-bottom: 2rem;
     color: white;
+    background-color: black;
+
+    // font-size: 3rem;
+
+    span {
+        border-bottom: 4px red solid;
+        padding-bottom: 1rem;
+    }
 }
+
+.contact{
+    margin-top: 6rem;
+}
+
+.contactWaysRow{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+    img{
+        height: 3rem;
+        object-fit: contain;
+    }
+}
+
+.contactAdressRow{
+    flex-direction: column;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    a{
+        color: white;
+    }
+}
+
+iframe{
+    padding: 1rem;
+    height: 25rem;
+    width: 25rem;
+}
+
+.mapAndContactForm{
+    display: flex;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    font-family: 'Open Sans', sans-serif;
+
+    padding: 1rem;
+    width: calc(100vw - 35rem);
+    height: 25rem;
+
+    span{
+        color: white;
+        padding-bottom: -1rem;
+    }
+
+    input, textarea{
+        outline: none !important;
+        font-family: 'Open Sans', sans-serif;
+        padding: .5rem;
+        margin-bottom: .8rem;
+        background-color: rgb(49, 49, 49);
+        border: .01rem solid rgb(255, 255, 255);
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(105, 105, 105);
+        border-image: initial;
+        color: white;
+        -webkit-appearance: none;
+
+
+          &:hover{
+              border-color: red !important;
+            }
+    }
+
+    input{
+        height: 1rem;
+    }
+
+    input:focus {
+        border: 3px solid rgb(206, 19, 19);
+      }
+    
+
+    input[type="text"]:focus:hover {
+        outline: none;
+        box-shadow: 0px 0px 5px #61C5FA;
+        border:1px solid #5AB0DB;
+        border-radius:0;
+    }
+    textarea{
+        height: 7rem;
+
+        &:focus {
+            border: 3px solid rgb(206, 19, 19);
+        }
+    }
+
+    button{
+        height: 2rem;
+        color: white;
+        background-color: black;
+        border: .01rem solid ;
+        border-color: rgb(105, 105, 105);
+        &:hover{
+            border-color: red !important;
+            cursor: pointer;
+          }
+    }
+}
+
+.effect-8 ~ .focus-border:before,
+.effect-8 ~ .focus-border:after{content: ""; position: absolute; top: 0; left: 0; width: 0; height: 2px; background-color: #3399FF; transition: 0.3s;}
+.effect-8 ~ .focus-border:after{top: auto; bottom: 0; left: auto; right: 0;}
+.effect-8 ~ .focus-border i:before,
+.effect-8 ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: #3399FF; transition: 0.4s;}
+.effect-8 ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0;}
+.effect-8:focus ~ .focus-border:before,
+.effect-8:focus ~ .focus-border:after{width: 100%; transition: 0.3s;}
+.effect-8:focus ~ .focus-border i:before,
+.effect-8:focus ~ .focus-border i:after{height: 100%; transition: 0.4s;}

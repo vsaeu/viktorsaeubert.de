@@ -1,3 +1,4 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
   activeProjectFilter: string = 'ALL';
+  angularFilter=true;
+  JSfilter=true;
 
   constructor() { }
 
@@ -15,6 +18,21 @@ export class ProjectsComponent implements OnInit {
 
   filter(filter){
     this.activeProjectFilter = filter;
+  }
+
+  filterAll(){
+    this.angularFilter = true;
+    this.JSfilter = true;
+  }
+
+  filterNG(){
+    this.angularFilter = true;
+    this.JSfilter = false;
+  }
+
+  filterJS(){
+    this.angularFilter = false;
+    this.JSfilter = true;
   }
 
 }

@@ -23,6 +23,7 @@ export class SlideshowComponent implements OnInit {
   animating = false;
   flipText = false;
   flipText2 = false;
+  arrowDown = false;
 
   @ViewChildren('letter') letters!: QueryList<any>;
   @ViewChildren('letter2') letters2!: QueryList<any>;
@@ -30,17 +31,48 @@ export class SlideshowComponent implements OnInit {
   // implement OnInit means: this script is performing at onload
   constructor() { }
 
+  toContacts(){
+    document.getElementById("Contact").scrollIntoView({behavior:"smooth"});
+  }
+
+  toSkills(){
+    document.getElementById("Skills").scrollIntoView({behavior:"smooth"});
+  }
+
   ngAfterViewInit() {
     let lettersArr = this.letters.toArray();
     let lettersArr2 = this.letters2.toArray();
     this.fallingLetterAnimation(lettersArr);
     setTimeout(() => {
       this.fallingLetterAnimation(lettersArr2)
-    }, 700);
+    }, 750);
     setTimeout(() => {
       this.flipText = true;
-    }, 3500);
+    }, 3000);
+
+    setTimeout(() => {
+      document.getElementById('picDiv').classList.remove('picHidden');
+      document.getElementById('picDiv').classList.add('profilePic');
+    }, 4500);
+
+    setTimeout(() => {
+      document.getElementById('picDiv').classList.remove('picHidden');
+      document.getElementById('picDiv').classList.add('profilePic');
+    }, 5500);
+
+    setTimeout(() => {
+      document.getElementById('contactButton').classList.remove('contactButtonHidden');
+      document.getElementById('contactButton').classList.add('contactButton');
+
+    }, 6000);
+
+    setTimeout(() => {
+      this.arrowDown = true;
+    }, 6500);
+
   }
+
+
 
   fallingLetterAnimation(lettersArr: ElementRef[]) {
     lettersArr.reverse().forEach((l, i) => {
@@ -49,11 +81,11 @@ export class SlideshowComponent implements OnInit {
       setTimeout(() => {
         letter.classList.remove('invisible');
         letter.classList.add('falling-animation');
-      }, 1000 + 50 * i);
+      }, 500 + 50 * i);
     });
   }
 
-  images = ['watchBGLayer.png', 'officeBGLayer.png', 'monitorsBGLayer.png'];
+  images = ['1.jpg', '2.jpg', '3.jpg'];
   headlines = [
     'Hi, I am Viktor,',
     'Passionate web developement',

@@ -1,47 +1,55 @@
 <div class="slideshowContainer">
-  <img src="assets/img/{{images[currentImage]}}" *ngIf="showImage" class="imgSlideshow">
+  <img src="assets/img/reducedSizeSlideshow/{{images[currentImage]}}" *ngIf="showImage" class="imgSlideshow">
   <!-- Variables from typescript can be used, Syntax: {{var}} -->
-
-
 
 </div>
 
 <div class="slideshowContainer slideshowOverlay">
-  <p class="fadeIn" *ngIf="showImage">
-    <!-- {{headlines[currentImage]}} -->
+  <!-- <p class="fadeIn" *ngIf="showImage">
     <span>Hi, I'm Viktor</span> <br>
     <span>I'm a frontend developer</span>
-  </p>
-
-
-
+  </p> -->
 
 </div>
 
-<div class="home-content flex">
-  <div class="headings">
-    <h1 class="mainheading">
-      <div class="falling-letter-container" [class.flip-text1]="flipText">
-        <span class="falling-letter" *ngFor="let letter of heading_1; let i = index" #letter>{{
+<div class="mainAttraction">
+  <div class="home-content flex">
+    <div class="headings">
+      <h1 class="mainheading">
+        <div class="falling-letter-container" [class.flip-text1]="flipText">
+          <span class="falling-letter" *ngFor="let letter of heading_1; let i = index" #letter>{{
+            letter
+            }}</span>
+        </div>
+        <div class="mainheading2" [class.flip-text2]="flipText">
+          <span>Hi, I am </span><span class="text-colored">Viktor</span>
+        </div>
+      </h1>
+
+      <h2 class="subheading">
+        <span class="falling-letter" *ngFor="let letter of heading_2; let i = index"
+          [class.fade-out]="flipText && i == 18" #letter2>{{
           letter
           }}</span>
-      </div>
-      <div class="mainheading2" [class.flip-text2]="flipText">
-        <span>Hi, I am </span><span class="text-colored">Viktor</span>
-      </div>
-    </h1>
+      </h2>
 
-    <h2 class="subheading">
-      <span class="falling-letter" *ngFor="let letter of heading_2; let i = index"
-        [class.fade-out]="flipText && i == 18" #letter2>{{
-        letter
-        }}</span>
-    </h2>
+    </div>
+    <div>
 
+    </div>
+
+    <div id="picDiv" class="profilePicWrapper picHidden">
+      <img class="profilePic" src="assets/img/viktor/1.jpg">
+  
+    </div>
+
+    <div (click)="toContacts()" class="contactButton contactButtonHidden" id="contactButton">
+      <span>Contact me</span>
+    </div>
 
   </div>
 
-  <div>
-
-
+  <div (click)="toSkills()" class="arrowToSkills" ></div>
+  <div *ngIf="arrowDown" class="arrow arrow-first"></div>
+  <div *ngIf="arrowDown" class="arrow arrow-second"></div>
 </div>

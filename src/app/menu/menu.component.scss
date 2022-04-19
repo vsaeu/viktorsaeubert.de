@@ -4,7 +4,7 @@ header {
     right: 0;
     left: 0;
     height: 80px;
-    z-index: 1;
+    z-index: 555555;
     padding: 0 7rem;
     display: flex;
     align-items: center;
@@ -49,9 +49,14 @@ span{
     font-family: 'Cabin Sketch', cursive;
    font-size: 3rem;
    color: rgb(255, 255, 255);
-
+cursor: pointer;
 }
 
 .darkVS{
     color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+a{
+    cursor: pointer;
 }

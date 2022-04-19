@@ -1,21 +1,75 @@
-<h1><span>MY PROJECTS</span></h1>
+<h1 id="Projects"><span>MY PROJECTS</span></h1>
 
 <div class="projectFilter">
-    <span (click)="filter('ALL')" [class.activeProjectFilterClass]="activeProjectFilter === 'ALL'">
+    <span (click)="filter('ALL')" (click)=" filterAll()" [class.activeProjectFilterClass]="activeProjectFilter === 'ALL'">
         ALL</span>
     <span [class.activeProjectFilterClass]="activeProjectFilter === 'ANGULAR'"
-        (click)="filter('ANGULAR')">ANGULAR</span>
+    (click)="filter('ANGULAR')" (click)=" filterNG()">ANGULAR</span>
     <span [class.activeProjectFilterClass]="activeProjectFilter === 'JAVASCRIPT'"
-        (click)="filter('JAVASCRIPT')">JAVASCRIPT</span>
+        (click)="filter('JAVASCRIPT')" (click)=" filterJS()">JAVASCRIPT</span>
 </div>
 
 
 <div class="projectsWrapper">
-    <div class="projects">
-        <img src="./assets/img/projects/laptopPokedex.jpg">
-        <div  class="projectDescription">
-            <h3>#Pokedex</h3> <br>
-            <h5>A Pokemo Gallery through pokeapi.co</h5>
+    <div class="projects " *ngIf="angularFilter">
+        <img src="./assets/img/projects/final/ROF.jpg">
+        <div  class="projectDescription ">
+            <h3>#Ring of Fire</h3> 
+            <h5>Multiplayer drinking game</h5>
+
+            <dl>
+                <dt>Technologies:</dt>
+                <dd>Angular, Firebase, TS/SCSS</dd>
+            </dl>
+
+            <div class="projectsFooter">
+                <span>Check it out</span>
+                <img class="imGit" src="./assets/img/footer/github-fill.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="projects" *ngIf="JSfilter">
+        <img src="./assets/img/projects/final/EPL.jpg">
+        <div  class="projectDescription ">
+            <h3>#El Pollo Loco</h3> 
+            <h5>Object oriented jump & run game</h5>
+
+            <dl>
+                <dt>Technologies:</dt>
+                <dd>Javascript, HTML/CSS</dd>
+            </dl>
+
+            <div class="projectsFooter">
+                <span>Check it out</span>
+                <img class="imGit" src="./assets/img/footer/github-fill.png" alt="">
+            </div>
+        </div>
+    </div>    
+    
+    <div class="projects" *ngIf="JSfilter">
+        <img src="./assets/img/projects/final/join.jpg">
+        <div  class="projectDescription ">
+            <h3>#Join</h3> 
+            <h5>Team made kanban tool</h5>
+
+            <dl>
+                <dt>Technologies:</dt>
+                <dd>Javascript, HTML/CSS</dd>
+            </dl>
+
+            <div class="projectsFooter">
+                <span>Check it out</span>
+                <img class="imGit" src="./assets/img/footer/github-fill.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="projects" *ngIf="JSfilter">
+        <img src="./assets/img/projects/final/Pokedex.jpg">
+        <div  class="projectDescription ">
+            <h3>#Pokedex</h3> 
+            <h5>A Pokemo gallery through pokeapi.co</h5>
 
             <dl>
                 <dt>Technologies:</dt>
@@ -24,15 +78,27 @@
 
             <div class="projectsFooter">
                 <span>Check it out</span>
-                <img class="imGit" src="./assets/img/github-fill.png" alt="">
+                <img class="imGit" src="./assets/img/footer/github-fill.png" alt="">
             </div>
-
-
         </div>
     </div>
 
-    <div class="projects">
-        <img src="./assets/img/projects/laptopROF.jpg">
+    <div class="projects" *ngIf="JSfilter">
+        <img src="./assets/img/projects/final/Quiz.PNG">
+        <div  class="projectDescription ">
+            <h3>#Crypto Quiz</h3> 
+            <h5>Do you know the bitcoin basics?</h5>
+
+            <dl>
+                <dt>Technologies:</dt>
+                <dd>Javascript, Bootstrap, HTML/CSS</dd>
+            </dl>
+
+            <div class="projectsFooter">
+                <span>Check it out</span>
+                <img class="imGit" src="./assets/img/footer/github-fill.png" alt="">
+            </div>
+        </div>
     </div>
 
 </div>

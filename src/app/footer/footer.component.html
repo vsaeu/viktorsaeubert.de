@@ -1,1 +1,13 @@
-<p>footer works!</p>
+<footer  [class.footerAtImprint]="router.url =='/imprint' " >
+        <div class="legal">
+<a routerLink="/imprint">Imprint</a>
+<a routerLink="/data protection">Data Protection</a>
+</div>
+<span>© Viktor Säubert 2022</span>
+<div class="socials">
+    <img src="./assets/img/footer/linkedin.png">
+    <img src="./assets/img/footer/xing.png">
+    <img src="./assets/img/footer/github.png">
+
+</div>
+</footer>
