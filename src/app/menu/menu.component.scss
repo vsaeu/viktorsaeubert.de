@@ -17,9 +17,13 @@ header {
         margin-left: 3rem;
         font-weight: 600;
         cursor: pointer;
+        transition: 225ms;
+
 
         &:hover {
             color: rgba(255, 255, 255, 0.6);
+            border-bottom: 2px solid #2dfcd8;
+transition: 225ms;
         }
     }
 
@@ -31,8 +35,13 @@ header {
     .darkLinks{
         a {
             color: black;
+            transition: 225ms;
+
             &:hover {
                 color: rgba(0,0,0,.6);
+                border-bottom: 2px solid #2dfcd8;
+                transition: 225ms;
+
             }
         }
     }

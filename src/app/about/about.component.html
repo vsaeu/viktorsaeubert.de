@@ -1,6 +1,6 @@
 
 
-<div class="aboutFirstRow">
+<div data-aos="fade-right" class="aboutFirstRow">
      <img class="profilePic" src="assets/img/viktor/5.jpg">
 
      <div class="headerWrapper">
@@ -31,7 +31,7 @@
 <span>as a frontend developer who is able to visualize goals and find the direct way to solutions. I enjoy working in teams and likewise my previous colleagues were happy to work with me. </span> -->
 
 <div class="journeyStationsWrapper">
-<div *ngFor="let journeyStation of journeyStations" class="journeyStationsClass">
+<div data-aos="slide-up" *ngFor="let journeyStation of journeyStations" class="journeyStationsClass">
      <img src="./assets/img/{{journeyStation['imgUrl']}}">
      <h4>{{journeyStation.title}}</h4>
      <span>{{journeyStation.description}}</span>

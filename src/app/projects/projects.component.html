@@ -1,6 +1,6 @@
-<h1 id="Projects"><span>MY PROJECTS</span></h1>
+<h1 data-aos="fade-right" id="Projects"><span>MY PROJECTS</span></h1>
 
-<div class="projectFilter">
+<div data-aos="fade-right" class="projectFilter">
     <span (click)="filter('ALL')" (click)=" filterAll()" [class.activeProjectFilterClass]="activeProjectFilter === 'ALL'">
         ALL</span>
     <span [class.activeProjectFilterClass]="activeProjectFilter === 'ANGULAR'"
@@ -10,8 +10,8 @@
 </div>
 
 
-<div class="projectsWrapper">
-    <div class="projects " *ngIf="angularFilter">
+<div  class="projectsWrapper">
+    <div data-aos="slide-up" class="projects " *ngIf="angularFilter">
         <img src="./assets/img/projects/final/ROF.jpg">
         <div  class="projectDescription ">
             <h3>#Ring of Fire</h3> 
@@ -29,7 +29,7 @@
         </div>
     </div>
 
-    <div class="projects" *ngIf="JSfilter">
+    <div data-aos="slide-up" class="projects" *ngIf="JSfilter">
         <img src="./assets/img/projects/final/EPL.jpg">
         <div  class="projectDescription ">
             <h3>#El Pollo Loco</h3> 
@@ -47,7 +47,7 @@
         </div>
     </div>    
     
-    <div class="projects" *ngIf="JSfilter">
+    <div data-aos="slide-up" class="projects" *ngIf="JSfilter">
         <img src="./assets/img/projects/final/join.jpg">
         <div  class="projectDescription ">
             <h3>#Join</h3> 
@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <div class="projects" *ngIf="JSfilter">
+    <div data-aos="slide-up" class="projects" *ngIf="JSfilter">
         <img src="./assets/img/projects/final/Pokedex.jpg">
         <div  class="projectDescription ">
             <h3>#Pokedex</h3> 
@@ -83,7 +83,7 @@
         </div>
     </div>
 
-    <div class="projects" *ngIf="JSfilter">
+    <div data-aos="slide-up" class="projects" *ngIf="JSfilter">
         <img src="./assets/img/projects/final/Quiz.PNG">
         <div  class="projectDescription ">
             <h3>#Crypto Quiz</h3> 
