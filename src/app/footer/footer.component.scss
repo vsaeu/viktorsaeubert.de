@@ -12,19 +12,51 @@ a {
 
 footer {
     background-color: rgb(88, 88, 88);
-    height: 4rem;
+    min-height: 5rem;
     display: flex;
     align-items: center;
     padding-left: 2rem;
     justify-content: space-between;
     margin-top: 5rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+    footer {
+        justify-content: center;
+        padding-left: 0rem;
+        text-align: center;
+
+        span {
+            text-align: center;
+            margin: 1rem;
+        }
+    }
+
+    .legal {
+        margin: 2rem 1rem 1rem 1rem;
+    }
+
+
+    .socials {
+        margin: 1rem;
+        img {
+            margin-left: 0rem;
+        }
+    }
+
+    .flexReverse {
+        flex-wrap: wrap-reverse;
+    }
 }
 
 .socials {
     display: flex;
+    justify-content: center;
+
     img {
         width: 2rem;
         height: 2rem;
-        margin-left: 2rem;
+        margin: 1rem;
     }
 }

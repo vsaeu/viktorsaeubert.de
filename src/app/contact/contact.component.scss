@@ -20,7 +20,9 @@ h1 {
     display: flex;
     color: white;
     justify-content: space-between;
-    margin-bottom: 4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    flex-wrap: wrap;
 
     img{
         height: 3rem;
@@ -28,12 +30,20 @@ h1 {
     }
 }
 
+@media (max-width: 1000px) {
+    .contactWaysRow{
+    justify-content: center;
+}}
+
+
 .contactAdressRow{
     flex-direction: column;
     padding: 0 3rem;
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 4rem;
+
 
     a{
         color: white;
@@ -41,23 +51,47 @@ h1 {
 }
 
 iframe{
-    padding: 1rem;
-    height: 25rem;
+    
+    min-height: 25rem;
     width: 25rem;
 }
 
-.mapAndContactForm{
-    display: flex;
+
+
+
+
+form{
+    width: 100%;
+
 }
 
+
+
+@media (max-width: 1000px) {
+    iframe{
+        padding: 0rem;
+        height: 15rem;
+        width: 100vw !important;
+        margin-bottom: 3rem;
+
+    }
+
+    .mapAndContactForm{
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .contactForm{
+        padding: 0;
+    }
+}
 .contactForm{
     display: flex;
     flex-direction: column;
     justify-content: space-between ;
     font-family: 'Open Sans', sans-serif;
-
     padding: 1rem;
-    width: calc(100vw - 35rem);
+    // width: 66%;
     height: 25rem;
 
     span{
@@ -120,6 +154,27 @@ iframe{
           }
     }
 }
+
+@media (max-width: 1000px) {
+    .mapAndContactForm{
+        display: flex;
+    justify-content: center;
+}
+
+.mapAndContactForm{
+    flex-wrap: wrap;
+
+    form{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+.contactForm{
+
+    padding: 0rem;
+
+}}
 
 .effect-8 ~ .focus-border:before,
 .effect-8 ~ .focus-border:after{content: ""; position: absolute; top: 0; left: 0; width: 0; height: 2px; background-color: #3399FF; transition: 0.3s;}

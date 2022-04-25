@@ -2,7 +2,6 @@ h1 {
     text-align: center;
     padding-bottom: 2rem;
     color: white;
-    background-color: black;
 
     // font-size: 3rem;
 
@@ -12,16 +11,15 @@ h1 {
     }
 }
 
-.journeyStationsWrapper{
+.journeyStationsWrapper {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-flex-wrap: wrap;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    flex-wrap: wrap;
+
 }
 
-.journeyStationsClass{
+.journeyStationsClass {
     // background-color: antiquewhite;
     color: white;
     margin: 2rem 1rem;
@@ -32,39 +30,66 @@ flex-wrap: wrap;
     display: flex;
     flex-direction: column;
 
-    img{
+    img {
         height: 1.5rem;
         width: 1.5rem;
-        padding: .8rem;
+        padding: 0.8rem;
         background-color: #2cfcd8;
         border-radius: 100%;
     }
 
-    span{
+    span {
         text-align: center;
     }
-
 }
 
-.aboutFirstRow{
+@media (max-width: 1000px) {
+    .journeyStationsWrapper {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .journeyStationsClass {
+        width: 100vw;
+        margin: 0;
+        // border: wheat 1px solid;
+        padding-top: 2rem;
+    }
+
+    // .aboutFirstRow {
+    //     margin: 5rem;
+    // }
+}
+
+.aboutFirstRow {
     display: flex;
     justify-content: center;
-    margin: 6rem 0 2rem 0;
+    // margin: 6rem 3rem 2rem 3rem;
+    flex-wrap: wrap-reverse;
 }
 
-.headerWrapper{
+.headerWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+
+    // span{
+    //     margin-left: 3rem;
+    //     margin-right: 3rem;
+
+    // }
 }
 
-.aboutIntro{
+.aboutIntro {
+    display: flex;
     color: white;
-  width: 25rem !important;
-  text-align: center;
-  margin: 0 3rem;
-  box-sizing: border-box;
+    // width: 25rem !important;
+    text-align: center;
+    margin: 0 3rem 3rem 3rem;
+
+
 }
 
 .profilePic {
@@ -76,5 +101,8 @@ flex-wrap: wrap;
     box-shadow: 0px 2px 8px 2px rgba(255, 255, 255, 0.5);
 
     transition: 1125ms;
-  }
+}
 
+h4 {
+    text-align: center;
+}

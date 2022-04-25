@@ -12,11 +12,11 @@
   top: 0;
   display: flex;
   align-items: center;
+  height: 100vh;
 
   p {
     color: white;
     font-size: 3rem;
-    // max-width: 300px;
     border-left: 8px solid #d85050;
     padding-left: 2rem;
     margin-left: 7rem;
@@ -29,6 +29,7 @@
   width: 100vw;
   overflow: hidden;
   max-width: 100%;
+  object-position: center;
 }
 
 @keyframes zoomIn {
@@ -56,17 +57,23 @@
 }
 
 .home-content {
+  display: flex;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   position: absolute;
-  inset: 0;
-  padding: 85px 13vw;
+top: 0;
+left: 0;
+  padding: 6rem 0 0 0;
   z-index: 1;
   color: white;
+  width: 100vw;
   app-button + button {
     padding: 20px;
   }
 }
+
+// @media (max-width: )
 
 .home-container {
   width: 100%;
@@ -84,12 +91,15 @@
 
 .mainAttraction {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  position: absolute;
+  inset: 0;
 }
 
 
 .headings {
-  margin-bottom: 75px;
+margin: 0 3rem 0 0 !important;
+width: fit-content;
 }
 
 .falling-letter-container {
@@ -101,7 +111,7 @@
 .falling-letter {
   display: inline-block;
   position: relative;
-  top: -300px;
+  top: -4rem;
   left: 0;
   opacity: 0;
   white-space: pre;
@@ -122,6 +132,7 @@
   transition: transform 800ms ease-in-out 800ms;
   width: fit-content;
   font-size: 3rem;
+  white-space: nowrap;
 
 }
 
@@ -239,6 +250,9 @@
 }
 
 .contactButton {
+  position: absolute;
+  left: 6rem;
+  bottom: 0;
   border: #2dfcd8 solid 1px;
   border-radius: 2px;
   padding: 1rem 2rem;
@@ -247,7 +261,7 @@
   background-color: none;
   width: 10rem;
   text-align: center;
-  transition: 1125ms;
+  transition: 1525ms;
 
   &:hover {
     box-shadow: 0px 0px 5px 3px #2dfcd8;
@@ -255,7 +269,7 @@
 }
 
 .contactButtonHidden{
-  transform: translateX(-30vw);
+  // transform: translateX(-30vw);
   opacity: 0;
   transition: 1000ms;
   border: #2dfcd8 solid 1px;
@@ -269,9 +283,9 @@
 }
 
 .profilePicWrapper {
-  right: 25vw;
-  top: calc(50vh - 7.5rem);
-  position: absolute;
+  // right: 25vw;
+  // top: calc(50vh - 7.5rem);
+  // position: absolute;
 }
 
 .profilePic {
@@ -280,6 +294,7 @@
   border: 1px solid #fa2759;
   box-shadow: 0px 0px 5px 3px #fa2759;
   transition: 1125ms;
+  margin-top: 7rem;
 }
 
 .picHidden{
@@ -368,3 +383,5 @@ body {
   width: 3.2rem;
 
 }
+
+// subMainAttraction

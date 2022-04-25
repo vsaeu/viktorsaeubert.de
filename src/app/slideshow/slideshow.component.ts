@@ -68,7 +68,7 @@ export class SlideshowComponent implements OnInit {
 
     setTimeout(() => {
       this.arrowDown = true;
-    }, 6500);
+    }, 7500);
 
   }
 
