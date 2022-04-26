@@ -12,11 +12,11 @@ h1 {
     }
 }
 
-.contact{
+.contact {
     margin-top: 6rem;
 }
 
-.contactWaysRow{
+.contactWaysRow {
     display: flex;
     color: white;
     justify-content: space-between;
@@ -24,19 +24,19 @@ h1 {
     margin-right: 3rem;
     flex-wrap: wrap;
 
-    img{
+    img {
         height: 3rem;
         object-fit: contain;
     }
 }
 
 @media (max-width: 1000px) {
-    .contactWaysRow{
-    justify-content: center;
-}}
+    .contactWaysRow {
+        justify-content: center;
+    }
+}
 
-
-.contactAdressRow{
+.contactAdressRow {
     flex-direction: column;
     padding: 0 3rem;
     display: flex;
@@ -44,68 +44,68 @@ h1 {
     text-align: center;
     margin-bottom: 4rem;
 
-
-    a{
+    a {
         color: white;
     }
 }
 
-iframe{
-    
+.mapAndContactForm{
+    display: flex;
+
+
+    @media (max-width: 1000px) {
+flex-wrap: wrap;
+    }
+}
+
+iframe {
     min-height: 25rem;
     width: 25rem;
+    padding-left: 3rem;
+
+    @media (max-width: 1000px) {
+            padding: 0rem;
+            height: 15rem;
+            width: 100vw !important;
+            margin-bottom: 3rem;
+       }
 }
 
 
 
 
-
-form{
-    width: 100%;
-
-}
-
-
-
-@media (max-width: 1000px) {
-    iframe{
-        padding: 0rem;
-        height: 15rem;
-        width: 100vw !important;
-        margin-bottom: 3rem;
-
-    }
-
-    .mapAndContactForm{
-        margin-left: 0rem;
-        margin-right: 0rem;
-    }
-
-    .contactForm{
-        padding: 0;
-    }
-}
-.contactForm{
+.contactForm {
     display: flex;
     flex-direction: column;
-    justify-content: space-between ;
-    font-family: 'Open Sans', sans-serif;
+    justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
     padding: 1rem;
     // width: 66%;
     height: 25rem;
 
-    span{
+    @media (max-width: 1000px) {
+    width: 100%;
+    padding: 0 3rem;
+    }
+
+    @media (max-width: 400px) {
+        width: 100%;
+        padding: 0 1.5rem;
+        }
+
+    span {
         color: white;
         padding-bottom: -1rem;
     }
 
-    input, textarea{
+    input,
+    textarea {
         outline: none !important;
-        font-family: 'Open Sans', sans-serif;
-        padding: .5rem;
-        margin-bottom: .8rem;
+        font-family: "Open Sans", sans-serif;
+        padding: 0.5rem;
+        margin-bottom: 0.8rem;
         background-color: rgb(49, 49, 49);
-        border: .01rem solid rgb(255, 255, 255);
+        border: 0.01rem solid rgb(255, 255, 255);
         border-width: 1px;
         border-style: solid;
         border-color: rgb(105, 105, 105);
@@ -113,28 +113,26 @@ form{
         color: white;
         -webkit-appearance: none;
 
-
-          &:hover{
-              border-color: red !important;
-            }
+        &:hover {
+            border-color: red !important;
+        }
     }
 
-    input{
+    input {
         height: 1rem;
     }
 
     input:focus {
         border: 3px solid rgb(206, 19, 19);
-      }
-    
+    }
 
     input[type="text"]:focus:hover {
         outline: none;
-        box-shadow: 0px 0px 5px #61C5FA;
-        border:1px solid #5AB0DB;
-        border-radius:0;
+        box-shadow: 0px 0px 5px #61c5fa;
+        border: 1px solid #5ab0db;
+        border-radius: 0;
     }
-    textarea{
+    textarea {
         height: 7rem;
 
         &:focus {
@@ -142,47 +140,74 @@ form{
         }
     }
 
-    button{
+    button {
         height: 2rem;
         color: white;
         background-color: black;
-        border: .01rem solid ;
+        border: 0.01rem solid;
         border-color: rgb(105, 105, 105);
-        &:hover{
+        &:hover {
             border-color: red !important;
             cursor: pointer;
-          }
+        }
     }
 }
 
-@media (max-width: 1000px) {
-    .mapAndContactForm{
+form {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width:100%;
+
+    @media (max-width: 1000px) {
+
         display: flex;
-    justify-content: center;
-}
-
-.mapAndContactForm{
-    flex-wrap: wrap;
-
-    form{
-        margin-left: 3rem;
-        margin-right: 3rem;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 }
-
-.contactForm{
-
-    padding: 0rem;
-
-}}
 
 .effect-8 ~ .focus-border:before,
-.effect-8 ~ .focus-border:after{content: ""; position: absolute; top: 0; left: 0; width: 0; height: 2px; background-color: #3399FF; transition: 0.3s;}
-.effect-8 ~ .focus-border:after{top: auto; bottom: 0; left: auto; right: 0;}
+.effect-8 ~ .focus-border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3399ff;
+    transition: 0.3s;
+}
+.effect-8 ~ .focus-border:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+}
 .effect-8 ~ .focus-border i:before,
-.effect-8 ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: #3399FF; transition: 0.4s;}
-.effect-8 ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0;}
+.effect-8 ~ .focus-border i:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: #3399ff;
+    transition: 0.4s;
+}
+.effect-8 ~ .focus-border i:after {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+}
 .effect-8:focus ~ .focus-border:before,
-.effect-8:focus ~ .focus-border:after{width: 100%; transition: 0.3s;}
+.effect-8:focus ~ .focus-border:after {
+    width: 100%;
+    transition: 0.3s;
+}
 .effect-8:focus ~ .focus-border i:before,
-.effect-8:focus ~ .focus-border i:after{height: 100%; transition: 0.4s;}
+.effect-8:focus ~ .focus-border i:after {
+    height: 100%;
+    transition: 0.4s;
+}

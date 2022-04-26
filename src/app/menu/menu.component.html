@@ -2,7 +2,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <span [class.darkVS]="darkMode" routerLink="/"><>VS</span>
+    <span class="dNone" id="VS" [class.darkVS]="darkMode" routerLink="/"><>VS</span>
 
     <div [class.darkLinks]="darkMode" class="headerLinks">
         <a (click)="toHome()" routerLink="/">HOME</a>
@@ -11,5 +11,7 @@
         <a (click)="toAbout()" >ABOUT</a>
         <a (click)="toContacts()" >CONTACT</a>
     </div>
+
+    <span class="menuBar" id="menuBar">III</span>
 
 </header>

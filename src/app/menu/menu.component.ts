@@ -33,4 +33,11 @@ export class MenuComponent implements OnInit {
     document.getElementById("Contact").scrollIntoView({behavior:"smooth"});
   }
 
+  ngAfterViewInit() {
+    setTimeout(() => {
+      document.getElementById('VS').classList.remove('dNone');
+      document.getElementById('VS').classList.add('bounce-in-top');
+    }, 6500);
+  }
+
 }

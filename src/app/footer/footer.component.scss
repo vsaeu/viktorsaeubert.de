@@ -15,7 +15,7 @@ footer {
     min-height: 5rem;
     display: flex;
     align-items: center;
-    padding-left: 2rem;
+    padding: 0 3rem;
     justify-content: space-between;
     margin-top: 5rem;
     flex-wrap: wrap;
@@ -24,7 +24,7 @@ footer {
 @media (max-width: 1000px) {
     footer {
         justify-content: center;
-        padding-left: 0rem;
+        padding: 0rem;
         text-align: center;
 
         span {
@@ -35,6 +35,10 @@ footer {
 
     .legal {
         margin: 2rem 1rem 1rem 1rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+    
     }
 
 
@@ -58,5 +62,23 @@ footer {
         width: 2rem;
         height: 2rem;
         margin: 1rem;
+    }
+}
+
+.noWrap{
+    white-space: nowrap;
+}
+
+.heart{
+    margin: 0 !important;
+}
+
+.madeBy{
+    padding: 2rem 0 2rem 0 ;
+
+    @media (max-width: 1000px) {
+        padding: 0 0 2rem 0 ;
+
+
     }
 }
