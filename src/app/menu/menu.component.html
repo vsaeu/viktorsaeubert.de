@@ -12,6 +12,21 @@
         <a (click)="toContacts()" >CONTACT</a>
     </div>
 
-    <span class="menuBar" id="menuBar">III</span>
+    <span class="menuBar" id="menuBar" (click)="schowBar()">III</span>
+
 
 </header>
+
+<div class="menuBarWrapper " [class.menuBarWrapperHidden]="!showMenuBar" >
+    <!-- <div [class.darkLinks]="darkMode" class="headerLinks"> -->
+        <h3>Menu</h3>    
+        <a (click)="toHome()" routerLink="/">HOME</a>
+        <a (click)="toSkills()"  >SKILLS</a>
+        <a (click)="toProjects()"  >PROJECTS</a>
+        <a (click)="toAbout()" >ABOUT</a>
+        <a (click)="toContacts()" >CONTACT</a>
+
+        <span (click)="closeBar()" class="closingMark">x</span>
+
+
+</div>

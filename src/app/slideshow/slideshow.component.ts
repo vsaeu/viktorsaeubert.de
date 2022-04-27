@@ -64,7 +64,7 @@ export class SlideshowComponent implements OnInit {
       document.getElementById('contactButton').classList.remove('contactButtonHidden');
       document.getElementById('contactButton').classList.add('contactButton');
 
-    }, 6000);
+    }, 7000);
 
     setTimeout(() => {
       this.arrowDown = true;

@@ -11,6 +11,7 @@ import * as AOS from 'aos';
 export class AppComponent implements OnInit {
 
 currentRoute = '';
+showMenuBar = false;
 
 // mit dem constructor werden in Angular Sachen von außen importiert
 // Mit public lässt sich auch von HTML auf die var zugreife, hier router

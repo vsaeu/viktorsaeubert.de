@@ -211,3 +211,56 @@ a {
     }
 }
 
+
+.menuBarWrapper{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 555555555;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 225ms;
+    color: white;
+    box-shadow: 0px 1px 4px 1px rgba(255, 255, 255, 0.5);
+
+
+
+    a{
+        color: white;
+        padding: 1rem 0;
+        cursor: pointer;
+        text-decoration: none;
+        border-bottom: 3px solid #000000;
+
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.6);
+            border-bottom: 3px solid #fa2759;
+            transition: 125ms;
+        }
+    }
+}
+
+.menuBarWrapperHidden{
+    transform: translateX(15.5rem);
+    transition: 225ms;
+}
+
+h3{
+    padding: 3rem 0 2rem 0;
+    font-family: "Cabin Sketch", cursive;
+font-size: 2rem;
+}
+
+.closingMark{
+    position: absolute;
+    top:1rem;
+    right: 2rem;
+    color: white;
+    font-size: 2.5rem;
+
+}

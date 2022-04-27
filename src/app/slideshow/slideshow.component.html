@@ -34,6 +34,10 @@
             }}</span>
         </h2>
 
+        <div (click)="toContacts()" class="contactButton contactButtonHidden" id="contactButton">
+          <span>Contact me</span>
+        </div>
+
       </div>
 
 
@@ -41,10 +45,10 @@
       <img id="picDiv" class="profilePic picHidden" src="assets/img/viktor/1.jpg">
       <!-- </div> -->
 
-
+<!-- 
       <div (click)="toContacts()" class="contactButton contactButtonHidden" id="contactButton">
         <span>Contact me</span>
-      </div>
+      </div> -->
 
     </div>
 
@@ -52,11 +56,16 @@
 
   </div>
 
-  <div (click)="toContacts()" class="contactButton contactButtonHidden" id="contactButton">
+  <!-- <div (click)="toContacts()" class="contactButton contactButtonHidden" id="contactButton">
     <span>Contact me</span>
-  </div>
+  </div> -->
 
   <div (click)="toSkills()" class="arrowToSkills"></div>
   <div *ngIf="arrowDown" class="arrow arrow-first"></div>
   <div *ngIf="arrowDown" class="arrow arrow-second"></div>
 </div>
+
+
+<!-- <div class="tempor">
+  VS
+</div> -->
