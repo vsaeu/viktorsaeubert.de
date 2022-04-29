@@ -37,4 +37,8 @@ export class ProjectsComponent implements OnInit {
     this.JSfilter = true;
   }
 
+  openLink(path){
+    window.open(path,'_blank');
+  }
+
 }

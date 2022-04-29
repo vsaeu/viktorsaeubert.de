@@ -57,11 +57,17 @@ justify-content: center;
 .socials {
     display: flex;
     justify-content: center;
+    a{
+        padding: 0;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
 
     img {
         width: 2rem;
         height: 2rem;
         margin: 1rem;
+        cursor: pointer;
     }
 }
 

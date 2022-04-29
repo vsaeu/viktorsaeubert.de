@@ -15,4 +15,8 @@ constructor(public router: Router) {}
   ngOnInit(): void {
   }
 
+  openLink(path){
+    window.open(path,'_blank');
+  }
+
 }
