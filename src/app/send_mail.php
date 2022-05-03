@@ -41,11 +41,15 @@ switch ($_SERVER['REQUEST_METHOD']) {
     case ("POST"): //Send the email;
         header("Access-Control-Allow-Origin: *");
 
-        $subject = "Contact From " . $_POST['name'];
+        $subject = "Contact From " . $_POST['senderName'];
         $headers = "From:  noreply-viktorsaeubert@viktorsaeubert.com";
+        $msgSender = $_POST['message'] . " von: " . $_POST['senderName'] . "Mail: " . $_POST['recipent']; 
+
+        $msgReply = "The following message has been sent to Viktor: " . $_POST['message'] . " from: " . $_POST['senderName'] . "Mail address: " . $_POST['recipent']; 
+
        
-        mail($recipient, $subject, $_POST['message'], $headers);
-        mail("vsaeubert@gmail.com", $subject, $_POST['message'], $headers);
+        mail($recipient, $subject, $msgReply, $headers);
+        mail("vsaeubert@gmail.com", $subject, $msgSender, $headers);
 
         header("Location: " . $redirect); 
 
