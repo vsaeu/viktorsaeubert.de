@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 
 
 
@@ -11,8 +11,11 @@ import * as AOS from 'aos';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private elementRef: ElementRef) {}
+  ngAfterViewInit() {
+      this.elementRef.nativeElement.ownerDocument
+          .body.style.backgroundColor = 'black';
+  }
   skills =
     [
       {

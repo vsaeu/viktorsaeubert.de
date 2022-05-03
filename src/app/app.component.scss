@@ -4,6 +4,7 @@
     padding-top: 120px;
     background-color: white !important;
     scroll-behavior: smooth;
+    height: 100%;
 
 }
 
@@ -12,4 +13,8 @@
     --c-primary: #fa2759;
     --c-secodary: #2dfcd8;
     --c-black: #000;
+}
+
+.bgWhite{
+    background-color: rgb(131, 51, 51) !important;
 }

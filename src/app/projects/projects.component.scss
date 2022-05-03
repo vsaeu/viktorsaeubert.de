@@ -21,6 +21,8 @@ h1 {
     // border: 1px solid blue;
 }
 
+
+
 .projects {
     position: relative;
     display: flex;
@@ -156,17 +158,31 @@ dt {
         }
     }
 
+    .bgButtonCheck{
+              background-color: rgb(69, 69, 69, .4);
+  
+    }
+
     a {
         padding: 0.3rem;
-        border: 1px solid #fa2759;
+        // background-color: rgb(69, 69, 69, .3);
+
         cursor: pointer;
 
         &:hover {
             color: #fa2759;
         }
     }
+
+    .borderRed{
+        border: 1px solid #fa2759;
+    }
 }
 
 .hiddenProject {
     display: none;
 }
+
+.borderNone{
+    border: none !important;
+    }

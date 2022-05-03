@@ -6,10 +6,10 @@
 
     <div [class.darkLinks]="darkMode" class="headerLinks">
         <a (click)="toHome()" routerLink="/">HOME</a>
-        <a (click)="toSkills()"  >SKILLS</a>
-        <a (click)="toProjects()"  >PROJECTS</a>
-        <a (click)="toAbout()" >ABOUT</a>
-        <a (click)="toContacts()" >CONTACT</a>
+        <a (click)="toSkills()" routerLink="/" >SKILLS</a>
+        <a (click)="toProjects()" routerLink="/" >PROJECTS</a>
+        <a (click)="toAbout()" routerLink="/" >ABOUT</a>
+        <a (click)="toContacts()" routerLink="/" >CONTACT</a>
     </div>
 
     <span class="menuBar" id="menuBar" (click)="schowBar()">III</span>

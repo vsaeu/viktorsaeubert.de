@@ -13,6 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainContentComponent } from './main-content/main-content.component';
+import { SuccessComponent } from './success/success.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { MainContentComponent } from './main-content/main-content.component';
     ContactComponent,
     FooterComponent,
     MainContentComponent,
+    SuccessComponent,
   ],
   imports: [
     BrowserModule,

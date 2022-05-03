@@ -1,5 +1,5 @@
 import { ThisReceiver } from '@angular/compiler';
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 
 
@@ -13,8 +13,11 @@ export class ProjectsComponent implements OnInit {
   angularFilter=true;
   JSfilter=true;
 
-  constructor() { }
-
+  constructor(private elementRef: ElementRef) {}
+  ngAfterViewInit() {
+      this.elementRef.nativeElement.ownerDocument
+          .body.style.backgroundColor = 'black';
+  }
   ngOnInit(): void {
   }
 

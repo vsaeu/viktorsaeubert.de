@@ -308,6 +308,7 @@ h2 {
   width: 10rem;
   text-align: center;
   transition: 225ms;
+  background-color: rgb(69, 69, 69, .3);
 
   @media (max-width: 1000px) {
     display: none;

@@ -1,8 +1,9 @@
-<app-menu [darkMode]="router.url =='/imprint' || router.url =='/data-protection' "></app-menu>
+<app-menu [darkMode]="router.url =='/imprint' || router.url =='/data-protection'  || router.url =='/success' "></app-menu>
 
-<div [class.container]="router.url =='/imprint' || router.url =='/data-protection' " class="bg-black">
+<div [class.container]="router.url =='/imprint' || router.url =='/data-protection' || router.url =='/success' " 
+>
     <!-- Container Klasse wird nur angewandt, wenn die URL nicht die Start URL ist -->
-    <router-outlet></router-outlet>
+    <router-outlet [class.bgWhite]="darkMode" ></router-outlet>
 <!-- moved to main content component -->
 <!-- <app-skills></app-skills>
 <app-projects></app-projects>
@@ -10,7 +11,7 @@
 <app-contact> </app-contact> -->
 </div>
 
-<app-footer> </app-footer>
+<app-footer>  </app-footer>
 
 <!-- This is an own HTML Tag, simply included
 app should alway be used in name -->

@@ -1,11 +1,11 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-data-protection',
-  templateUrl: './data-protection.component.html',
-  styleUrls: ['./data-protection.component.scss']
+  selector: 'app-success',
+  templateUrl: './success.component.html',
+  styleUrls: ['./success.component.scss']
 })
-export class DataProtectionComponent implements OnInit {
+export class SuccessComponent implements OnInit {
 
   constructor(private elementRef: ElementRef) {}
   ngAfterViewInit() {

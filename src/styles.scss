@@ -7,28 +7,24 @@
     --c-black: #000;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     scroll-behavior: smooth;
-    background-color: black;
-  }
-
-body{
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    position:relative;
-    overflow-x: hidden;
-
-    // background-color: black;
 }
 
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+    background-color: black;
+}
 
-
-.lightMode{
+.lightMode {
     background-color: rgb(131, 61, 61) !important;
-
 }
 
 // font-family: 'Black Ops One', cursive;
@@ -41,10 +37,10 @@ body{
 $base-color-blue: #2cfcd8;
 $base-color-red: #fa2858;
 
-.bg-black{
-    background-color: rgb(0, 0, 0);
-}
+// .bg-black {
+//     background-color: rgb(0, 0, 0);
+// }
 
-.pos_abs{
+.pos_abs {
     position: absolute;
 }

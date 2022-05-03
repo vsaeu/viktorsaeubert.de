@@ -29,7 +29,7 @@ export class SlideshowComponent implements OnInit {
   @ViewChildren('letter2') letters2!: QueryList<any>;
 
   // implement OnInit means: this script is performing at onload
-  constructor() { }
+  constructor(private elementRef: ElementRef) {}
 
   toContacts(){
     document.getElementById("Contact").scrollIntoView({behavior:"smooth"});
@@ -70,6 +70,9 @@ export class SlideshowComponent implements OnInit {
       this.arrowDown = true;
     }, 7500);
 
+    this.elementRef.nativeElement.ownerDocument
+    .body.style.backgroundColor = 'black';
+
   }
 
 
@@ -108,7 +111,7 @@ export class SlideshowComponent implements OnInit {
         this.showImage = true;
       }, 5);
 
-    }, 5000);
+    }, 10000);
   }
 
 }

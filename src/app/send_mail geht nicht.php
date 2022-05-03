@@ -4,7 +4,7 @@
 
 $recipient = $_POST['recipent'];
 // $redirect = '';
-$redirect = '/success';
+$redirect = 'index.html';
 // $recipient = 'vsaeubert@gmail.com'; Ursprünglich
 
 ########### CONFIG END ###########
@@ -41,7 +41,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
     case ("POST"): //Send the email;
         header("Access-Control-Allow-Origin: *");
 
-        $subject = "Contact From " . $_POST['name'];
+        $subject = "Contact From " . $_POST['senderName'];
         $headers = "From:  noreply-viktorsaeubert@viktorsaeubert.com";
        
         mail($recipient, $subject, $_POST['message'], $headers);
